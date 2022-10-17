@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(157, 168, 0);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fundoRemix {
+    0% {
+        background-color: brown;
+    }
+
+    25% {
+        background-color: aqua;
+    }
+
+    50% {
+        background-color: black;
+    }
+
+    75% {
+        background-color: blueviolet;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}
+
+.conteiner {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.video {
+    display: none;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao button {
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: rgb(204, 0, 0) 0px 0px 20px;
+    background-color: brown;
+    color: azure;
+    transition: 0.5s all ease;
+}
+
+.botao:hover button {
+    box-shadow: rgb(31, 0, 204) 0px 0px 50px;
+    background-color: aqua;
+    color: black;
+}
+
+@media only screen and (max-width: 580px) {
+    .botao button {
+        width: 200px;
+        height: 150px;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+    }
+}
